@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div id="successBox" class="success-box">
+        <strong>Message Sent!</strong>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+      <div class="form-wrapper">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-group first-name">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" />
+            <span id="firstNameError" class="error"></span>
+          </div>
+          <div class="form-group last-name">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" />
+            <span id="lastNameError" class="error"></span>
+          </div>
+          <div class="form-group email">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" />
+            <span id="emailError" class="error"></span>
+          </div>
+          <div class="form-group query-type">
+            <label>Query Type *</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="general"
+                  name="queryType"
+                  value="General"
+                />
+                <label for="general">General Enquiry</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="support"
+                  name="queryType"
+                  value="Support"
+                />
+                <label for="support">Support Request</label>
+              </div>
+            </div>
+            <span id="queryTypeError" class="error"></span>
+          </div>
+          <div class="form-group message">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <span id="messageError" class="error"></span>
+          </div>
+          <div class="form-group consent">
+            <div class="consent-item">
+              <input type="checkbox" id="consent" name="consent" />
+              <label for="consent"
+                >I consent to being contacted by the team *</label
+              >
+            </div>
+            <span id="consentError" class="error"></span>
+          </div>
+          <div class="form-group submit">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
